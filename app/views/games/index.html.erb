@@ -1,0 +1,23 @@
+<h1>Игры</h1>
+
+<div class="games-all">
+  <% @games.each do |game| %>
+    <article class="game-card">
+      <div class="game-cover">
+       
+      </div>
+
+      <div class="game-card-content">
+        <h2>
+          <%= link_to game.title, game_path(game) %>
+        </h2>
+
+        <p><%= truncate(game.description, length: 120) %></p>
+
+        <p class="game-info">
+          <%= game.genres.map(&:name).join(", ") %>
+        </p>
+      </div>
+    </article>
+  <% end %>
+</div>

@@ -629,12 +629,16 @@ alisa = User.find_or_initialize_by(email: "alisa19@example.com")
 alisa.username = "alisa"
 alisa.role = "user"
 alisa.avatar = nil
+alisa.password = "testtest"
+alisa.password_confirmation = "testtest"
 alisa.save!
 
 dima = User.find_or_initialize_by(email: "dima27@example.com")
 dima.username = "dima"
 dima.role = "user"
 dima.avatar = nil
+dima.password = "testtest"
+dima.password_confirmation = "testtest"
 dima.save!
 
 
@@ -691,15 +695,16 @@ alisa_favorites = Collection.find_or_initialize_by(
   user: alisa,
   title: "Любимое"
 )
-alisa_favorites.description = "Игры, к которым хочется возвращаться."
+alisa_favorites.description = "самые-самые любимые"
 alisa_favorites.collection_type = "favorites"
+
 alisa_favorites.save!
 
 dima_backlog = Collection.find_or_initialize_by(
   user: dima,
   title: "Хочу пройти"
 )
-dima_backlog.description = "Игры на потом."
+dima_backlog.description = "потом пройду, когда-нибудь точно"
 dima_backlog.collection_type = "backlog"
 dima_backlog.save!
 

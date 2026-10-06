@@ -1,10 +1,127 @@
-/*
- * This is a manifest file that'll be compiled into application.css.
- *
- * With Propshaft, assets are served efficiently without preprocessing steps. You can still include
- * application-wide styles in this file, but keep in mind that CSS precedence will follow the standard
- * cascading order, meaning styles declared later in the document or manifest will override earlier ones,
- * depending on specificity.
- *
- * Consider organizing styles into separate files for maintainability.
- */
+body {
+  margin: 0;
+  padding: 24px;
+  font-family: Arial, sans-serif;
+}
+
+.menuBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.menuBar div {
+  display: flex;
+  gap: 24px;
+}
+
+.games-all {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.game-card {
+  border: 1px solid #00000030;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.game-cover {
+  height: 160px;
+  background: #00000030;
+}
+
+.game-card-content {
+  padding: 16px;
+}
+
+.game-info, .collection-info {
+  opacity: 0.5;
+  font-size: 14px;
+}
+
+a {
+  color: #1d2c62;
+  text-decoration: none;
+}
+
+.collections-all {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.collection-card {
+  padding: 16px;
+  border: 1px solid #00000030;
+  border-radius: 8px;
+}
+
+.collection-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.back-link {
+  margin-top: 40px;
+}
+
+.game-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.game-cover-large {
+  height: 360px;
+  border-radius: 8px;
+}
+
+.game-info h1 {
+  margin-bottom: 16px;
+  font-size: 40px;
+  color: #1d2c62;
+  margin-top: 24px;
+}
+
+.game-description {
+  max-width: 720px;
+  font-size: 18px;
+}
+
+.game-details {
+  margin-top: 28px;
+  color: #1d2c62;
+}
+
+.collection-panel {
+  margin-top: 48px;
+}
+
+.collection-form {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.reviews-section {
+  margin-top: 40px;
+}
+
+.reviews-list {
+  display: grid;
+  gap: 16px;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.review-rating {
+  color:  #00000030;
+}
+
