@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  game: one
+  platform: one
+  release_date: 2026-10-06
+  available: false
+
+two:
+  game: two
+  platform: two
+  release_date: 2026-10-06
+  available: false

@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  collection: one
+  game: one
+  note: MyText
+  added_at: 2026-10-06 14:36:52
+
+two:
+  collection: two
+  game: two
+  note: MyText
+  added_at: 2026-10-06 14:36:52

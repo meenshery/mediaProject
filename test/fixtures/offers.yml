@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  game: one
+  store: one
+  price: 9.99
+  currency: MyString
+  region: MyString
+  purchase_type: MyString
+  activation_type: MyString
+  url: MyString
+  available: false
+
+two:
+  game: two
+  store: two
+  price: 9.99
+  currency: MyString
+  region: MyString
+  purchase_type: MyString
+  activation_type: MyString
+  url: MyString
+  available: false

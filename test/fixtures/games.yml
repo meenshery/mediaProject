@@ -1,0 +1,25 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: MyText
+  release_date: 2026-10-06
+  age_rating: MyString
+  playtime_min: 1
+  playtime_max: 1
+  difficulty: MyString
+  session_length: MyString
+  has_russian: false
+  has_coop: false
+
+two:
+  title: MyString
+  description: MyText
+  release_date: 2026-10-06
+  age_rating: MyString
+  playtime_min: 1
+  playtime_max: 1
+  difficulty: MyString
+  session_length: MyString
+  has_russian: false
+  has_coop: false

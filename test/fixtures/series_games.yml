@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  series: one
+  game: one
+  order_number: 1
+  chronology_note: MyText
+
+two:
+  series: two
+  game: two
+  order_number: 1
+  chronology_note: MyText
