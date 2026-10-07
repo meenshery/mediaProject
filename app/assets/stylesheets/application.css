@@ -18,9 +18,10 @@ body {
 .game-card,
 .collection-card {
   padding: 16px;
-  margin-bottom: 16px;
   border: 1px solid #00000030;
   border-radius: 8px;
+  max-width: 720px;
+  margin: 24px auto;
 }
 
 .game-info,
