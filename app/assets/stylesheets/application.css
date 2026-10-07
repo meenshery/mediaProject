@@ -7,7 +7,6 @@ body {
 .menuBar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   margin-bottom: 16px;
 }
 
@@ -16,28 +15,16 @@ body {
   gap: 24px;
 }
 
-.games-all {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 24px;
-}
-
-.game-card {
+.game-card,
+.collection-card {
+  padding: 16px;
+  margin-bottom: 16px;
   border: 1px solid #00000030;
   border-radius: 8px;
-  overflow: hidden;
 }
 
-.game-cover {
-  height: 160px;
-  background: #00000030;
-}
-
-.game-card-content {
-  padding: 16px;
-}
-
-.game-info, .collection-info {
+.game-info,
+.collection-info {
   opacity: 0.5;
   font-size: 14px;
 }
@@ -47,44 +34,15 @@ a {
   text-decoration: none;
 }
 
-.collections-all {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 24px;
-}
-
-.collection-card {
-  padding: 16px;
-  border: 1px solid #00000030;
-  border-radius: 8px;
-}
-
-.collection-actions {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
-
-.back-link {
-  margin-top: 40px;
-}
-
 .game-page {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-
-.game-cover-large {
-  height: 360px;
-  border-radius: 8px;
-}
-
-.game-info h1 {
-  margin-bottom: 16px;
-  font-size: 40px;
-  color: #1d2c62;
+.game-page h1 {
   margin-top: 24px;
+  margin-bottom: 16px;
+  color: #1d2c62;
 }
 
 .game-description {
@@ -94,11 +52,11 @@ a {
 
 .game-details {
   margin-top: 28px;
-  color: #1d2c62;
 }
 
-.collection-panel {
-  margin-top: 48px;
+.collection-panel,
+.reviews-section {
+  margin-top: 40px;
 }
 
 .collection-form {
@@ -107,21 +65,13 @@ a {
   margin-bottom: 24px;
 }
 
-.reviews-section {
-  margin-top: 40px;
-}
-
-.reviews-list {
-  display: grid;
-  gap: 16px;
-}
-
+.collection-actions,
 .review-header {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
 }
 
-.review-rating {
-  color:  #00000030;
+.back-link {
+  margin-top: 40px;
 }
-

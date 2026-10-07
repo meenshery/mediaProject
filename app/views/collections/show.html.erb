@@ -1,4 +1,4 @@
-<div class="collection-header">
+<div>
   <div>
     <h1><%= @collection.title %></h1>
 
@@ -6,15 +6,14 @@
       <p><%= @collection.description %></p>
     <% end %>
 
-    <p class="collection-meta">
+    <p class="collection-info">
       Тип: <%= @collection.collection_type %>
     </p>
   </div>
 
   <div class="collection-actions">
     <%= link_to "изменить",
-                edit_collection_path(@collection),
-                class: "button-link" %>
+                edit_collection_path(@collection)%>
 
     <%= button_to "удалить",
                   collection_path(@collection),
@@ -31,17 +30,13 @@
   <div class="games-all">
     <% @collection.collection_games.each do |collection_game| %>
       <article class="game-card">
-        <div class="game-cover">
-          
-        </div>
-
         <div class="game-card-content">
           <h3>
             <%= link_to collection_game.game.title,
                         game_path(collection_game.game) %>
           </h3>
 
-          <p class="game-meta">
+          <p class="game-info">
             <%= collection_game.game.genres.map(&:name).join(", ") %>
           </p>
 
@@ -53,7 +48,7 @@
     <% end %>
   </div>
 <% else %>
-  <p>В этой коллекции пока нет игр.</p>
+  <p>В этой коллекции пока нет игр</p>
 <% end %>
 
 <p class="back-link">

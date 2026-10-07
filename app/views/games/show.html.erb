@@ -1,8 +1,5 @@
 <div class="game-page">
   <section>
-    <div class="game-cover game-cover-large">
-      
-    </div>
 
     <div>
       <h1><%= @game.title %></h1>
@@ -86,19 +83,17 @@
             <% end %>
 
             <% if offer.price_histories.any? %>
-              <details>
-                <summary>история цены</summary>
+              <p><strong>История цены:</strong></p>
 
-                <ul>
-                  <% offer.price_histories.order(recorded_at: :desc).each do |history| %>
-                    <li>
-                      <%= history.recorded_at.to_date %> —
-                      <%= number_with_delimiter(history.price) %>
-                      <%= offer.currency %>
-                    </li>
-                  <% end %>
-                </ul>
-              </details>
+              <ul>
+                <% offer.price_histories.order(recorded_at: :desc).each do |history| %>
+                  <li>
+                    <%= history.recorded_at.to_date %> —
+                    <%= number_with_delimiter(history.price) %>
+                    <%= offer.currency %>
+                  </li>
+                <% end %>
+              </ul>
             <% end %>
 
             <% if offer.url.present? %>
@@ -150,7 +145,7 @@
   <% if @game.reviews.any? %>
     <div class="reviews-list">
       <% @game.reviews.each do |review| %>
-        <article class="review-card">
+        <article>
           <div class="review-header">
             <strong><%= review.user.username %></strong>
 
